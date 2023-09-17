@@ -1,0 +1,100 @@
+/* Imported Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* Shared styles */
+*{
+    margin: 0;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary-color {
+    color: #FF4A25;
+}
+
+.secondary-color {
+    color: #0B0223;
+}
+
+/*header styles*/
+nav{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a,
+.nav-box .nav-box-text{
+    color: #3C354F;
+    font-weight: 500;
+}
+
+.nav-title{
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 700;
+}
+.nav-title span{
+    font-size: 2.8rem;
+}
+
+.nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    padding: 15px 20px;
+    background-color: rgba(11, 2, 35, 0.10);;
+    border-radius: 8px;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 8px;
+}
+.fa-youtube{
+    color: #F61C0D;
+}
+.fa-youtube,
+.fa-tiktok{
+    cursor: pointer;
+}
+
+
+/* media queries */
+/* mobile devices */
+@media screen and (max-width: 576px){
+    nav{
+        align-items: center;
+        gap: 40px;
+    }
+    nav, nav ul{
+        flex-direction: column;
+    }
+}
+
+/* tablet and medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    nav{
+        align-items: center;
+        gap: 40px;
+        flex-direction: column;
+    }  
+}
