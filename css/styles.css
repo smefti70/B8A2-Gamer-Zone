@@ -6,7 +6,8 @@
     margin: 0;
 }
 
-body {
+body,
+button {
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -222,7 +223,7 @@ nav ul li a,
 }
 
 /* play section styles */
-.play-instantly-section{
+.play-instantly-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,19 +231,47 @@ nav ul li a,
     margin-top: 120px;
 }
 
-.play-instantly-content{
+.play-instantly-content {
     width: 25%;
 }
 
-.play-instantly-img{
+.play-instantly-img {
     position: relative;
     width: 40%;
 }
 
-.img-badge{
+.img-badge {
     position: absolute;
     bottom: -50px;
     left: -50px;
+}
+
+/* buttons section styles */
+.buttons-section {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    background-color: #FFF;
+}
+
+.button:hover {
+    color: #FF42A5;
+    border: 2px solid #FF42A5;
+    cursor: pointer;
 }
 
 /* media queries */
@@ -290,21 +319,21 @@ nav ul li a,
         margin-top: 30px;
     }
 
-    .play-instantly-content{
+    .play-instantly-content {
         width: 85%;
     }
-    
+
 
     .play-instantly-section {
         flex-direction: column;
         align-items: center;
     }
 
-    .play-instantly-img .img-base{
+    .play-instantly-img .img-base {
         width: 150%;
     }
 
-    .play-instantly-img .img-badge{
+    .play-instantly-img .img-badge {
         width: 80%;
     }
 
@@ -346,7 +375,7 @@ nav ul li a,
         margin-top: 30px;
     }
 
-    .play-instantly-content{
+    .play-instantly-content {
         width: 90%;
     }
 
@@ -355,11 +384,11 @@ nav ul li a,
         align-items: center;
     }
 
-    .play-instantly-img .img-base{
+    .play-instantly-img .img-base {
         width: 150%;
     }
 
-    .play-instantly-img .img-badge{
+    .play-instantly-img .img-badge {
         width: 80%;
     }
 
