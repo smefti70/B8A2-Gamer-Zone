@@ -327,6 +327,12 @@ footer .fa-youtube {
     text-align: center;
 }
 
+.nav-link,
+.logo,
+.term{
+    cursor: pointer;
+}
+
 /* media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
